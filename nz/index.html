@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../JS/jquery-3.2.1.js"></script>
+</head>
+<body>
+
+今天<input type="text" id="input" title="输入名字">女装
+<input type="button" onclick="pd()" value="提交">
+<div id="sc"></div>
+<script type="text/javascript">
+    function pd() {
+        var name;
+        name = $("#input").val();
+        if (name === "华莱士飞蛙") {
+            document.getElementById("sc").innerHTML = "<h2>yes!</h2><br>"
+        } else {
+            document.getElementById("sc").innerHTML = "<h2>no!</h2><br>"
+        }
+    }
+</script>
+</body>
+</html>
